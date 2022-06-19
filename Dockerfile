@@ -17,5 +17,4 @@ COPY ./pom.xml ./pom.xml
 RUN chmod 755 /app/mvnw
 
 RUN ./mvnw clean package -DskipTests
-ADD target/payconiq-stock-api-docker.jar app.jar
-ENTRYPOINT ["java","-jar","app.jar"]
+ENTRYPOINT ["java","-jar","target/payconiq-stock-api-0.0.1-SNAPSHOT.jar"]
