@@ -1,0 +1,22 @@
+version: "3"
+services:
+  #service 1: mongodb service definition
+  mongo_db:
+    image: mongo:latest
+    container_name: "mongo_db"
+    restart: always
+    ports:
+      - "27017:27017"
+
+  #service 2: Payconiq Stock API Service Definition
+  stock_api_service:
+    image: payconiq-stock-api:latest
+    container_name: payconiq-stock-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    restart: always
+    depends_on:
+      - mongo_db

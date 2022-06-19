@@ -1,0 +1,20 @@
+# Mongodb configuration
+spring:
+  data:
+    mongodb:
+      database: Stock
+      host: mongo_db
+      port: 27017
+
+# Open API Specification
+api:
+  title: Payconiq Stock V1 API Reference
+  version: 1.0.0
+  description: The Payconiq Stock API is organized around REST and uses HTTP response codes to indicate API errors.
+  termsOfService: https://www.sampleurl.com
+  contact:
+    name: Payconiq Developer Support
+    email: devsupport@company.com
+  license:
+    name: Apache 2.0
+    url: https://springdoc.org
