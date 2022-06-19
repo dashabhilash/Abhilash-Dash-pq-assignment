@@ -22,5 +22,3 @@ docker-compose up
 | http://localhost:8080/api/stocks | POST | { "id":"1", "name":"Stock 1", "currentPrice":"1000" } | update the price of a single stock |
 | http://localhost:8080/api/stocks{id}/{currentPrice} | PATCH | - | To update existing record. |
 | http://localhost:8080/api/stocks/{id} | DELETE | - | delete a single stock |
-
-```
