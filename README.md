@@ -1,17 +1,10 @@
 # Payconic Stock API
 
-It's a JVM based backend application using REST. That contains the following
-endpoints:
-    - GET /api/stocks (get a list of stocks)
-    - POST /api/stocks (create a stock)
-    - GET /api/stocks/1 (get one stock from the list)
-    - PATCH /api/stocks/1 (update the price of a single stock)
-    - DELETE/api/stocks/1 (delete a single stock)
-    
-The initial list of stocks are created on application start-up.
+It's a JVM based backend application using REST to perform various operation on Stock.
 
 ## Prerequisite
 Docker is required to be install on the machine.
+Guide: https://runnable.com/docker/install-docker-on-macos
 
 ## Installation
 1) Clone the Repo & run the following commands.
